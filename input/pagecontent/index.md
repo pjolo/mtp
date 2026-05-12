@@ -1,6 +1,25 @@
-### Introduction TEST
+# CH MTP – Swiss Maternity Transfer Pass
 
-**CH IG** is a template for creating a [HL7 Switzerland](https://www.hl7.ch/) FHIR implementation guide.    
+## Introduction
+The CH MTP Implementation Guide defines FHIR R4 profiles for the 
+digital representation of the Swiss Maternity Transfer Pass.
+
+## Scope
+This guide covers:
+- Mother demographics
+- Newborn demographics
+- Pregnancy status documentation
+- Prenatal care visits
+
+## Relationship to other IGs
+| IG | Relationship |
+|----|-------------|
+| CH Core | Parent profiles |
+| CH Term | Terminology |
+| IPS | Alignment for cross-border use |
+
+## Authors & Contributors
+- HL7 Switzerland                        // ⚠️ Kontaktdetails ergänzen 
 
 ### Source and Download
 
