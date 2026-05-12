@@ -17,7 +17,7 @@ Usage: #example
 // Sektion 1 – Schwangerschaft
 * section[pregnancy].title = "Schwangerschaft"
 * section[pregnancy].code = $loinc#10162-6
-* section[pregnancy].entry[0] = Reference(UC2-Observation-Ultrasound)
+* section[pregnancy].entry[0] = Reference(UC2-Condition-Pregnancy)
 
 // Sektion 2 – Beobachtungen
 * section[observations].title = "Beobachtungen"
