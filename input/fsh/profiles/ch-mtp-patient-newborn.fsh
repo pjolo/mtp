@@ -1,5 +1,5 @@
 Profile: CHMTPPatientNewborn
-Parent: CHCorePatient                    
+Parent: CHMTPPatient                    
 Id: ch-mtp-patient-newborn
 Title: "CH MTP Patient Newborn"
 Description: "Profile for the newborn in the context of the Swiss Maternity Transfer Pass (CH-MTP). The newborn is represented as an independent Patient resource, linked to the mother via a RelatedPerson resource.

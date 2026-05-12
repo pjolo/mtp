@@ -1,5 +1,5 @@
 Profile: CHMTPPatientMother
-Parent: CHCorePatient                    
+Parent: CHMTPPatient                    
 Id: ch-mtp-patient-mother
 Title: "CH MTP Patient Mother"
 Description: "Profile for the mother in the context of the Swiss Maternity Transfer Pass (CH-MTP). Based on CH Core Patient and aligned with IPS Patient."
