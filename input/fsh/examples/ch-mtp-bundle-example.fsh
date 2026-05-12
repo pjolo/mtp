@@ -1,6 +1,6 @@
 Instance: ch-mtp-bundle-example
 InstanceOf: CHMTPBundle
-Title: "Beispiel: MTP Bundle (UC1)"
+Title: "Beispiel: MTP Bundle"
 Usage: #example
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -9,7 +9,7 @@ Usage: #example
 
 // --- Composition ---
 * entry[composition].fullUrl = "urn:uuid:composition-uc1"
-* entry[composition].resource = UC1-Composition
+* entry[composition].resource = UC1-Composition-MTP
 
 // --- Patient Mutter ---
 * entry[+].fullUrl = "urn:uuid:patient-uc1"
@@ -17,11 +17,7 @@ Usage: #example
 
 // --- Practitioner ---
 * entry[+].fullUrl = "urn:uuid:practitioner-uc1"
-* entry[=].resource = UC1-Practitioner-SabineMeier
-
-// --- Condition Schwangerschaft ---
-* entry[+].fullUrl = "urn:uuid:condition-uc1"
-* entry[=].resource = UC1-Condition-Pregnancy
+* entry[=].resource = UC1-Practitioner-SarahBerger
 
 // --- Observation ---
 * entry[+].fullUrl = "urn:uuid:observation-uc1"
