@@ -4,7 +4,7 @@ Id: ch-mtp-bundle
 Title: "CH MTP Bundle"
 Description: "Bundle für den Mutter-Kind-Pass (MTP) – vollständiges Dokument."
 
-* type = #document
+// type wird nicht nochmals gesetzt – bereits in CHCoreDocument fixiert
 
 * identifier 1..1 MS
 
