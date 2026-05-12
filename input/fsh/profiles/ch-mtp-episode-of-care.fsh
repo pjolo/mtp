@@ -14,7 +14,7 @@ Description: "Übergeordneter Rahmen für die gesamte Schwangerschaftsbetreuung.
 
 // --- Patientin ---
 * patient 1..1 MS
-* patient only Reference(CHMTPPatient)  // Mutter
+* patient only Reference(CHMTPPatientMother)  // Mutter
 
 // --- Zeitraum ---
 * period 1..1 MS
@@ -23,7 +23,7 @@ Description: "Übergeordneter Rahmen für die gesamte Schwangerschaftsbetreuung.
 
 // --- Betreuungsteam ---
 * careManager MS
-* careManager only Reference(CHCorePractitioner or CHCorePractitionerRole)
+* careManager only Reference(CHMTPPractitionerMidwife or CHCorePractitioner or CHCorePractitionerRole)
 
 // --- Verknüpfte Diagnosen ---
 * diagnosis MS
