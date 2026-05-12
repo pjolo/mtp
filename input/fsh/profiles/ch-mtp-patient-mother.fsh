@@ -10,7 +10,7 @@ Description: "Profile for the mother in the context of the Swiss Maternity Trans
 * gender = #female  
 
 * identifier MS
-* identifier[ahvn13] MS
+* identifier[AHVN13] MS
 
 * address MS
 * address.country MS

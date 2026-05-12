@@ -9,3 +9,5 @@ Alias: $ChCorePatient =                 http://fhir.ch/ig/ch-core/StructureDefin
 
 // XML CH IG Code System
 Alias: $CSChIgExampleTranslation =      http://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation
+Alias: $v3-RoleCode =                   http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $v3-ActCode =                    http://terminology.hl7.org/CodeSystem/v3-ActCode
