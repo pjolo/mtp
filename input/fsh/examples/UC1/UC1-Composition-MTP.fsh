@@ -1,27 +1,26 @@
 Instance: UC1-Composition-MTP
-InstanceOf: Composition
-Title: "UC1 – CH MTP Composition Anna Müller"
-Description: "Mutterpass-Dokument für Anna Müller – Anwendungsfall 1"
+InstanceOf: CHMTPComposition
+Title: "UC1 – MTP Composition Anna Müller"
+Description: "Mutterpass-Composition für Anna Müller – Anwendungsfall 1"
 Usage: #example
 
 * status = #preliminary
-* type = $loinc#57055-6                                          // ✅ "Antepartum summary note"
+* type = $loinc#57055-6
 * type.text = "Mutterpass"
 
 * subject = Reference(UC1-Patient-AnnaMueller)
-* author[0] = Reference(UC1-PractitionerRole-SarahBerger)
-* custodian = Reference(UC1-Organization-FrauenpraxisBern)
-
 * date = "2025-01-15T09:45:00+01:00"
-* title = "Mutterpass – Anna Müller"
+* author[0] = Reference(UC1-Practitioner-SarahBerger)
+* custodian = Reference(UC1-Organization-FrauenpraxisBern)
+* title = "Mutter-Kind-Pass – Anna Müller"
 * language = #de-CH
 
-// Sektion 1: Schwangerschaftsstatus
-* section[0].title = "Schwangerschaftsstatus"
-* section[0].code = $loinc#10162-6                               // ✅ "History of pregnancies"
-* section[0].entry[0] = Reference(UC1-Observation-PregnancyStatus)
+// --- Section: Schwangerschaft ---
+* section[pregnancy].title = "Schwangerschaft"
+* section[pregnancy].code = $loinc#10162-6
+* section[pregnancy].entry[0] = Reference(UC1-Condition-Pregnancy)
 
-// Sektion 2: Vorsorgeuntersuchungen
-* section[1].title = "Vorsorgeuntersuchungen"
-* section[1].code = $loinc#57059-8                               // ✅ "Pregnancy visit summary note"
-* section[1].entry[0] = Reference(UC1-Encounter-PrenatalVisit1)
+// --- Section: Beobachtungen ---
+* section[observations].title = "Beobachtungen"
+* section[observations].code = $loinc#30954-2
+* section[observations].entry[0] = Reference(UC1-Observation-PregnancyStatus)
