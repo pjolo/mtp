@@ -1,5 +1,5 @@
 Instance: UC1-Bundle-MTP
-InstanceOf: CHMTPDocumentBundle
+InstanceOf: CHMTPBundle
 Title: "UC1 – MTP Bundle Anna Müller"
 Description: "Vollständiges Mutterpass-Bundle für Anna Müller – Anwendungsfall 1"
 Usage: #example
