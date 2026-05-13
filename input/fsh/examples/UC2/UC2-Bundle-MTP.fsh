@@ -13,8 +13,8 @@ Usage: #example
 
 //http://fhir.ch/ig/mtp/Composition/UC1-Composition-MTP
 // --- Composition ---
-* entry[0].fullUrl = "http://fhir.ch/ig/mtp/Composition/UC2-Composition-MTP"
-* entry[0].resource = UC2-Composition-MTP
+* entry[0].fullUrl = "http://fhir.ch/ig/mtp/Composition/UC2-Composition"
+* entry[0].resource = UC2-Composition
 
 // --- Patient ---
 * entry[1].fullUrl = "http://fhir.ch/ig/mtp/Patient/UC2-Patient-FatimaAlHassan"
