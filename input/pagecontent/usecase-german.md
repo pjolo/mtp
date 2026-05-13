@@ -68,16 +68,24 @@ dokumentiert.
 
 ## Anwendungsfall 4: Geburt und Erfassung des Neugeborenen
 
-[Sophie Weber](Patient-UC4-Patient-SophieWeber.html), 30 Jahre alt, gebiert am 
-3. Juni 2025 um 14:42 Uhr im 
-[Kantonsspital St. Gallen](Organization-UC4-Organization-KSSG.html) ihr erstes 
-Kind. Der Knabe wird als 
-[Luca Weber](Patient-UC4-Patient-LucaWeber.html) in das System aufgenommen – mit 
-einem Geburtsgewicht von 3'450 g und einer Grösse von 51 cm. Die Verknüpfung 
-zwischen Mutter und Kind erfolgt über eine 
-[RelatedPerson-Ressource](RelatedPerson-UC4-RelatedPerson-SophieWeberMother.html). 
-Die [Geburt](Encounter-UC4-Encounter-Delivery.html) wird im Mutterpass 
-abgeschlossen und die postnatalen Daten werden für die Weiterbehandlung 
-bereitgestellt. Der betreuende Geburtshelfer 
-[Dr. med. Andreas Meier](Practitioner-UC4-Practitioner-AndreasMeier.html) 
-signiert den Abschluss des Mutterpasses.
+[Sophie Weber](Patient-UC4-Patient-SophieWeber.html), 30 Jahre alt, gebiert am 3. Juni 2025 um 14:42 Uhr im
+[Kantonsspital St. Gallen](Organization-UC4-Organization-KSSG.html) ihr erstes Kind. Der Knabe wird als
+[Luca Weber](Patient-UC4-Patient-NewbornWeber.html) in das System aufgenommen – mit einem Geburtsgewicht
+von 3'420 g und einer Grösse von 51 cm. Die Verknüpfung zwischen Mutter und Kind erfolgt über eine
+[RelatedPerson-Ressource](RelatedPerson-UC4-RelatedPerson-MotherOfNewborn.html).
+
+Die [Geburt](Encounter-UC4-Encounter-Delivery.html) wird von der betreuenden Geburtshelferin
+[Dr. med. Anna Vogt](Practitioner-UC4-Practitioner-AnnaVogt.html) in ihrer Rolle als
+[Geburtshelfer](PractitionerRole-UC4-PractitionerRole-AnnaVogt.html) dokumentiert. Die postnatale
+Betreuung von Luca erfolgt im Rahmen des
+[Neugeborenen-Encounters](Encounter-UC4-Encounter-NewbornCare.html) durch
+[Dr. med. Markus Roth](Practitioner-UC4-Practitioner-MarkusRoth.html) in seiner Funktion als
+[Neonatologe](PractitionerRole-UC4-PractitionerRole-MarkusRoth.html).
+
+Der [Geburtsverlauf](Observation-UC4-Observation-DeliveryOutcome.html) wird mit einem Geburtsgewicht
+von 3'420 g erfasst. Der Zustand des Neugeborenen wird mittels
+[APGAR-Score nach 1 Minute](Observation-UC4-Observation-APGAR1.html) mit **8 Punkten** und nach
+[5 Minuten](Observation-UC4-Observation-APGAR5.html) mit **10 Punkten** bewertet. Alle Daten werden im
+[Geburtsdokument](Composition-UC4-Composition-DeliveryRecord.html) zusammengeführt, welches als
+[Bundle](Bundle-UC4-Bundle-DeliveryRecord.html) für die Weiterbehandlung bereitgestellt wird.
+Dr. med. Anna Vogt signiert den Abschluss des Geburtsdokuments.

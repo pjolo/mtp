@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:UC4-bundle-delivery-record-001"   // ⚠️ In Prod durch UUID ersetzen
 
 * type = #document
-* timestamp = "2025-07-15T05:00:00+01:00"
+* timestamp = "2025-06-03T14:42:00+01:00"
 
 * entry[0].fullUrl = "urn:uuid:UC4-Composition-DeliveryRecord"
 * entry[0].resource = UC4-Composition-DeliveryRecord

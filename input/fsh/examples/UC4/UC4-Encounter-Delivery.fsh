@@ -14,7 +14,7 @@ Usage: #example
 * participant[0].individual = Reference(UC4-PractitionerRole-AnnaVogt)
 * serviceProvider = Reference(UC4-Organization-KSSG)
 
-* period.start = "2025-07-15T02:30:00+01:00"
-* period.end   = "2025-07-15T04:15:00+01:00"
+* period.start = "2025-06-03T12:00:00+01:00"
+* period.end   = "2025-06-03T14:42:00+01:00"
 
 * reasonReference[0] = Reference(UC4-Observation-DeliveryOutcome)

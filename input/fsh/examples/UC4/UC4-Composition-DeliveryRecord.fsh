@@ -12,7 +12,7 @@ Usage: #example
 * author[0] = Reference(UC4-PractitionerRole-AnnaVogt)
 * custodian = Reference(UC4-Organization-KSSG)
 
-* date = "2025-07-15T05:00:00+01:00"
+* date = "2025-06-03T14:42:00+01:00"
 * title = "Geburtsdokument – Sophie Weber"
 * language = #de-CH
 

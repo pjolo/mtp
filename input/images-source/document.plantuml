@@ -1,0 +1,55 @@
+@startuml
+skinparam shadowing false
+skinparam rectangle {
+  roundCorner 10
+}
+skinparam defaultFontSize 12
+
+left to right direction
+
+rectangle "**Bundle: CH MTP Delivery Record Document**" as Bundle #orange/yellow {
+
+  together {
+    rectangle "**Entry: Composition**" as Comp #cornflowerblue/lightblue {
+      rectangle "Patient – Mother (Reference)" as SecMother #yellowgreen
+      rectangle "Patient – Newborn              " as SecNewborn #yellowgreen
+      rectangle "RelatedPerson                     " as SecRelated #yellowgreen
+      rectangle "Practitioner – Midwife          " as SecMidwife #yellowgreen
+      rectangle "Practitioner – Neonatologist" as SecNeo #yellowgreen
+      rectangle "Organization                        " as SecOrg #yellowgreen
+      rectangle "Encounter – Delivery              " as SecDelivery #yellowgreen
+      rectangle "Encounter – Newborn Care     " as SecNewbornCare #yellowgreen
+      rectangle "Observation – Delivery Outcome" as SecOutcome #yellowgreen
+      rectangle "Observation – APGAR 1 min  " as SecAPGAR1 #yellowgreen
+      rectangle "Observation – APGAR 5 min  " as SecAPGAR5 #yellowgreen
+    }
+  }
+
+  together {
+    rectangle "[[StructureDefinition-ch-mtp-patient-mother.html Entry: Patient (Mother)]]" as E1 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-patient-newborn.html Entry: Patient (Newborn)]]" as E2 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-relatedperson-mother.html Entry: RelatedPerson (Mother of Newborn)]]" as E3 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-practitioner.html Entry: Practitioner (Midwife)]]" as E4 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-practitioner.html Entry: Practitioner (Neonatologist)]]" as E5 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-organization.html Entry: Organization]]" as E6 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-encounter-delivery.html Entry: Encounter (Delivery)]]" as E7 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-encounter-newborncare.html Entry: Encounter (Newborn Care)]]" as E8 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-observation-delivery-outcome.html Entry: Observation (Delivery Outcome)]]" as E9 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-observation-apgar.html Entry: Observation (APGAR 1 min)]]" as E10 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-observation-apgar.html Entry: Observation (APGAR 5 min)]]" as E11 #salmon
+  }
+}
+
+SecMother       ..> E1
+SecNewborn      ..> E2
+SecRelated      ..> E3
+SecMidwife      ..> E4
+SecNeo          ..> E5
+SecOrg          ..> E6
+SecDelivery     ..> E7
+SecNewbornCare  ..> E8
+SecOutcome      ..> E9
+SecAPGAR1       ..> E10
+SecAPGAR5       ..> E11
+
+@enduml
