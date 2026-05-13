@@ -8,18 +8,22 @@ Usage: #example
 * type = $loinc#57055-6 "Antepartum summary note"
 * date = "2024-03-15"
 * language = #de-CH
+* title = "Mutter-Kind-Pass"
 
 * subject = Reference(UC2-Patient-FatimaAlHassan)
-* author[0] = Reference(UC2-Practitioner-ThomasKeller)
+* author[0] = Reference(UC2-PractitionerRole-ThomasKeller)
 * custodian = Reference(UC2-Organization-USB)
-* title = "Mutter-Kind-Pass"
 
 // Sektion 1 – Schwangerschaft
 * section[pregnancy].title = "Schwangerschaft"
 * section[pregnancy].code = $loinc#10162-6
 * section[pregnancy].entry[0] = Reference(UC2-Condition-Pregnancy)
+* section[pregnancy].entry[1] = Reference(UC2-EpisodeOfCare)
 
 // Sektion 2 – Beobachtungen
 * section[observations].title = "Beobachtungen"
 * section[observations].code = $loinc#30954-2
 * section[observations].entry[0] = Reference(UC2-Observation-Ultrasound)
+* section[observations].entry[1] = Reference(UC2-Observation-BloodGroup)
+* section[observations].entry[2] = Reference(UC2-Observation-Hemoglobin)
+* section[observations].entry[3] = Reference(UC2-Observation-RubellaAntibodies)

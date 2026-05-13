@@ -25,7 +25,7 @@ Schwangerschaftswoche und erscheint zur routinemässigen Vorsorgeuntersuchung be
 sie. Im Rahmen der Untersuchung werden ein 
 [Ultraschall](Observation-UC2-Observation-Ultrasound.html) durchgeführt sowie 
 [Laborwerte](Observation-UC2-Observation-LabResults.html) wie Blutgruppe, 
-Hämoglobin und Röteln-Antikörper erhoben. Alle Befunde sind unauffällig und werden 
+[Hämoglobin](Observation-UC2-Observation-Hemoglobin.html) und [Röteln-Antikörper](Observation-UC2-Observation-RubellaAntibodies.html) erhoben. Alle Befunde sind unauffällig und werden 
 im [Mutterpass](Encounter-UC2-Encounter-PrenatalVisit.html) eingetragen. Der 
 nächste Kontrolltermin wird in vier Wochen vereinbart.
 
