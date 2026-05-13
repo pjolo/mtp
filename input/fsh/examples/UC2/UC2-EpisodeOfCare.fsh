@@ -10,7 +10,7 @@ Usage: #example
 * type[0].text = "Schwangerschaft"
 
 * diagnosis[0].condition = Reference(UC2-Condition-Pregnancy)
-* diagnosis[0].role = $diagnosis-role#CC "Chief complaint"
+* diagnosis[0].role = http://terminology.hl7.org/CodeSystem/diagnosis-role#CC "Chief complaint"
 
 * patient = Reference(UC2-Patient-FatimaAlHassan)
 * managingOrganization = Reference(UC2-Organization-USB)

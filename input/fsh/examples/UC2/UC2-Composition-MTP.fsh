@@ -11,14 +11,14 @@ Usage: #example
 * title = "Mutter-Kind-Pass"
 
 * subject = Reference(UC2-Patient-FatimaAlHassan)
-* author[0] = Reference(UC2-PractitionerRole-ThomasKeller)
+* author[0] = Reference(UC2-Practitioner-ThomasKeller)   // ✅ Practitioner, nicht PractitionerRole
 * custodian = Reference(UC2-Organization-USB)
 
 // Sektion 1 – Schwangerschaft
 * section[pregnancy].title = "Schwangerschaft"
 * section[pregnancy].code = $loinc#10162-6
 * section[pregnancy].entry[0] = Reference(UC2-Condition-Pregnancy)
-* section[pregnancy].entry[1] = Reference(UC2-EpisodeOfCare)
+// ✅ EpisodeOfCare entfernt – section erlaubt nur CHMTPConditionPregnancy
 
 // Sektion 2 – Beobachtungen
 * section[observations].title = "Beobachtungen"
