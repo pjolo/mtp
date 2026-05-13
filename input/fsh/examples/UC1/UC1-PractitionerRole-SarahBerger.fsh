@@ -7,9 +7,8 @@ Usage: #example
 * practitioner = Reference(UC1-Practitioner-SarahBerger)
 * organization = Reference(UC1-Organization-FrauenpraxisBern)
 
-* code[0] = $sct#309361002                 // ⚠️ CODE_PRÜFEN "Obstetrician and gynecologist"
-
-* specialty[0] = $sct#394586005            // ⚠️ CODE_PRÜFEN "Gynecology"
+* code[0] = $sct#309361002                                       // ⚠️ CODE_PRÜFEN
+* specialty[0] = $sct#394586005                                  // ⚠️ CODE_PRÜFEN
 
 * telecom[0].system = #phone
 * telecom[0].value = "+41 31 123 45 67"

@@ -16,11 +16,9 @@ Usage: #example
 * valueCodeableConcept = $loinc#LA15173-0 "Pregnant"
 * valueCodeableConcept.text = "Schwanger"
 
-// Errechneter Geburtstermin
 * component[0].code = $loinc#11778-8 "Delivery date Estimated"
 * component[0].valueDateTime = "2025-10-15"
 
-// Schwangerschaftswoche
 * component[1].code = $loinc#49051-6 "Gestational age in weeks"
 * component[1].valueQuantity.value = 8
 * component[1].valueQuantity.unit = "weeks"

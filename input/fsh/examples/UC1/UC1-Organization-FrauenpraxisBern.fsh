@@ -4,7 +4,7 @@ Title: "UC1 – Frauenpraxis Bern"
 Description: "Gynäkologische Praxis in Bern – Anwendungsfall 1"
 Usage: #example
 
-* identifier[0].system = "urn:oid:2.51.1.3"                      // ✅ GLN OID
+* identifier[0].system = "urn:oid:2.51.1.3"
 * identifier[0].value = "7601000000002"                          // ⚠️ Fiktive GLN
 
 * name = "Frauenpraxis Bern"

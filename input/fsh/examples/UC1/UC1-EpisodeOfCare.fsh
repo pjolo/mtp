@@ -9,6 +9,9 @@ Usage: #example
 * type[0] = $sct#77386006 "Pregnancy"
 * type[0].text = "Schwangerschaft"
 
+* diagnosis[0].condition = Reference(UC1-Condition-Pregnancy)   // ✅ Ergänzt
+* diagnosis[0].rank = 1
+
 * patient = Reference(UC1-Patient-AnnaMueller)
 
 * managingOrganization = Reference(UC1-Organization-FrauenpraxisBern)

@@ -4,8 +4,7 @@ Title: "UC1 – Dr. med. Sarah Berger (Gynäkologin)"
 Description: "Behandelnde Gynäkologin im Anwendungsfall 1"
 Usage: #example
 
-// GLN (Global Location Number) – Standard in CH
-* identifier[0].system = "urn:oid:2.51.1.3"                      // ✅ GLN OID
+* identifier[0].system = "urn:oid:2.51.1.3"
 * identifier[0].value = "7601000000001"                          // ⚠️ Fiktive GLN
 
 * name[0].family = "Berger"
@@ -14,5 +13,5 @@ Usage: #example
 
 * gender = #female
 
-* qualification[0].code = $sct#309343006                         // ✅ "Physician"
+* qualification[0].code = $sct#309343006
 * qualification[0].code.text = "Gynäkologin"

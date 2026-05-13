@@ -7,6 +7,7 @@ Usage: #example
 * status = #preliminary
 * type = $loinc#57055-6
 * type.text = "Mutterpass"
+* title = "Mutterpass – Anna Müller"                             // ✅ Pflichtfeld ergänzt
 
 * subject = Reference(UC1-Patient-AnnaMueller)
 * date = "2025-01-15T09:45:00+01:00"

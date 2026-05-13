@@ -12,6 +12,8 @@ Usage: #example
 
 * subject = Reference(UC1-Patient-AnnaMueller)
 
+* episodeOfCare[0] = Reference(UC1-EpisodeOfCare)               // ✅ Ergänzt
+
 * participant[0].individual = Reference(UC1-Practitioner-SarahBerger)
 * participant[0].type[0] = $v3-ParticipationType#PPRF "primary performer"
 
