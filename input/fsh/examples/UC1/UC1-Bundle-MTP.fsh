@@ -11,8 +11,8 @@ Usage: #example
 * timestamp = "2025-01-15T09:45:00+01:00"
 * language = #de-CH
 
-* entry[0].fullUrl = "http://fhir.ch/ig/mtp/Composition/UC1-Composition-MTP"
-* entry[0].resource = UC1-Composition-MTP
+* entry[composition].fullUrl = "http://fhir.ch/ig/mtp/Composition/UC1-Composition-MTP"
+* entry[composition].resource = UC1-Composition-MTP
 
 * entry[+].fullUrl = "http://fhir.ch/ig/mtp/Patient/UC1-Patient-AnnaMueller"
 * entry[=].resource = UC1-Patient-AnnaMueller
