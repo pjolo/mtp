@@ -27,7 +27,7 @@ Usage: #example
 * status = #final
 * category[0] = $observation-category#exam
 
-* code = $sct#289398001                                          // ⚠️ CODE_PRÜFEN "Fetal presentation"
+* code = $sct#364607000                                          // ⚠️ CODE_PRÜFEN "Fetal presentation"
 * code.text = "Kindslage"
 
 * subject = Reference(UC3-Patient-ClaudiaSchmid)
