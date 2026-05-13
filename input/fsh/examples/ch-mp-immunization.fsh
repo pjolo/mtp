@@ -5,8 +5,8 @@ Description: "Beispiel einer Hepatitis-B-Impfung beim Neugeborenen."
 
 * status = #completed
 * vaccineCode = $sct#16584000 "Hepatitis B vaccine"
-* patient = Reference(NewbornPatientExample)
+* patient = Reference(UC4-Patient-NewbornWeber)
 * occurrenceDateTime = "2025-01-20T09:00:00+01:00"
 * lotNumber = "HB-2025-001"
-* performer.actor = Reference(MidwifeExample)
+* performer.actor = Reference(UC5-Practitioner-MariaBrunner)
 * note.text = "Erste Dosis. Keine unerwünschten Reaktionen beobachtet."
