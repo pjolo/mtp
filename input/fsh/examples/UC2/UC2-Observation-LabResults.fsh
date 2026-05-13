@@ -56,21 +56,14 @@ Usage: #example
 Instance: UC2-Observation-RubellaAntibodies
 InstanceOf: Observation
 Title: "UC2 – Röteln-Antikörper"
-Description: "Röteln-Antikörper Fatima Al-Hassan: Immunität vorhanden"
+Description: "Röteln-Antikörper-Titer von Fatima Al-Hassan"
 Usage: #example
 
 * status = #final
-* category[0] = $observation-category#laboratory
-
-* code = $loinc#20657-8                                          // ✅ "Rubella virus Ab [Units/volume] in Serum"
-* code.text = "Röteln-Antikörper"
-
+* code = $loinc#8013-5 "Rubella virus Ab [Units/volume] in Serum"
 * subject = Reference(UC2-Patient-FatimaAlHassan)
-* performer[0] = Reference(UC2-Practitioner-ThomasKeller)
-* encounter = Reference(UC2-Encounter-PrenatalVisit)
-* effectiveDateTime = "2025-03-10T11:00:00+01:00"
-
-* valueCodeableConcept = $sct#365861007                          // ⚠️ CODE_PRÜFEN "Immune status"
-* valueCodeableConcept.text = "Immunität vorhanden"
-
-* interpretation[0] = $obs-interpretation#N                      // ✅ "Normal"
+* effectiveDateTime = "2024-03-15"
+* valueQuantity.value = 32
+* valueQuantity.unit = "IU/mL"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #[IU]/mL                     // ✅ "Normal"

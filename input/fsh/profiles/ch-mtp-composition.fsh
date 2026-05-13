@@ -45,7 +45,11 @@ Description: "Composition für den Mutter-Kind-Pass (MTP)"
 * section[observations].code = $loinc#30954-2
 * section[observations].code MS
 * section[observations].entry MS
-* section[observations].entry only Reference(CHMTPObservationPregnancy)
+// Alle relevanten Observation-Typen erlauben:
+* section[observations].entry only Reference(
+    CHMTPObservationPregnancy or
+    Observation
+)
 
 // --- Section: Neugeborenes ---
 * section[newborn].title = "Neugeborenes"
