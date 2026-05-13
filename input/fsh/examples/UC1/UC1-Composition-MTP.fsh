@@ -12,7 +12,6 @@ Usage: #example
 * date = "2025-01-15T09:45:00+01:00"
 * author[0] = Reference(UC1-Practitioner-SarahBerger)
 * custodian = Reference(UC1-Organization-FrauenpraxisBern)
-* title = "Mutter-Kind-Pass – Anna Müller"
 * language = #de-CH
 
 // --- Section: Schwangerschaft ---
