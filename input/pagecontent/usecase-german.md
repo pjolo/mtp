@@ -17,7 +17,7 @@ sowie die [erste Vorsorgeuntersuchung](Encounter-UC1-Encounter-PrenatalVisit1.ht
 festgehalten werden. Anna gibt an, keine Vorerkrankungen zu haben und keine 
 Medikamente einzunehmen.
 
-## Anwendungsfall 2: Reguläre Vorsorgeuntersuchung
+### Anwendungsfall 2: Reguläre Vorsorgeuntersuchung
 
 [Fatima Al-Hassan](Patient-UC2-Patient-FatimaAlHassan.html), 28 Jahre alt, 
 wohnhaft an der Rosenweg 5 in 4051 Basel, befindet sich in der 20. 
@@ -39,7 +39,7 @@ Alle Befunde sind unauffällig und werden in der
 [Mutter-Kind-Pass Bundle](Bundle-UC2-Bundle-MTP.html) gespeichert wird. 
 Der nächste Kontrolltermin wird in vier Wochen vereinbart.
 
-## Anwendungsfall 3: Übergabe an die Geburtsklinik
+### Anwendungsfall 3: Übergabe an die Geburtsklinik
 
 [Claudia Schmid](Patient-UC3-Patient-ClaudiaSchmid.html), 34 Jahre alt, wohnhaft 
 an der Langstrasse 45 in 8004 Zürich, befindet sich in der 36. Schwangerschaftswoche. 
@@ -65,8 +65,7 @@ die [Übergabe](Encounter-UC3-Encounter-Transfer.html) sind im
 [Übergabedokument](Composition-UC3-Composition-MTPTransfer.html) vollständig 
 dokumentiert.
 
-
-## Anwendungsfall 4: Geburt und Erfassung des Neugeborenen
+### Anwendungsfall 4: Geburt und Erfassung des Neugeborenen
 
 [Sophie Weber](Patient-UC4-Patient-SophieWeber.html), 30 Jahre alt, gebiert am 3. Juni 2025 um 14:42 Uhr im
 [Kantonsspital St. Gallen](Organization-UC4-Organization-KSSG.html) ihr erstes Kind. Der Knabe wird als
@@ -89,3 +88,26 @@ von 3'420 g erfasst. Der Zustand des Neugeborenen wird mittels
 [Geburtsdokument](Composition-UC4-Composition-DeliveryRecord.html) zusammengeführt, welches als
 [Bundle](Bundle-UC4-Bundle-DeliveryRecord.html) für die Weiterbehandlung bereitgestellt wird.
 Dr. med. Anna Vogt signiert den Abschluss des Geburtsdokuments.
+
+### Anwendungsfall 5: Postnatale Nachkontrolle, Impfung und Neugeborenen-Screening
+
+[Luca Weber](Patient-UC4-Patient-NewbornWeber.html), sechs Wochen nach seiner Geburt am 3. Juni 2025,
+erscheint gemeinsam mit seiner Mutter [Sophie Weber](Patient-UC4-Patient-SophieWeber.html) zur
+postnatalen Nachkontrolle bei der Hebamme
+[Maria Brunner](Practitioner-UC5-Practitioner-MariaBrunner.html) in ihrer Rolle als
+[Hebamme](PractitionerRole-UC5-PractitionerRole-MariaBrunner.html) der
+[Hebammenpraxis Zug](Organization-UC5-Organization-HebammenpraxisZug.html).
+
+Die [postnatale Nachkontrolle](Encounter-UC5-Encounter-PostnatalVisit.html) umfasst die Beurteilung
+des Allgemeinzustands von Mutter und Kind. Im Rahmen des Besuchs erhält Luca seine erste
+[Hepatitis-B-Impfung](Immunization-UC5-Immunization-HepB.html), verabreicht durch Maria Brunner.
+Die Impfung wird mit Chargen-Nummer und Datum vollständig dokumentiert.
+
+Zusätzlich wird ein
+[Neugeborenen-Hörscreening](Observation-UC5-Observation-HearingScreening.html) durchgeführt.
+Das Screening verläuft beidseitig unauffällig und wird mit dem Befund «Gehör normal» festgehalten.
+
+Alle erhobenen Daten werden im
+[Nachkontrolldokument](Composition-UC5-Composition-PostnatalRecord.html) zusammengeführt und als
+[Bundle](Bundle-UC5-Bundle-PostnatalRecord.html) für die Weiterbehandlung bereitgestellt.
+Maria Brunner signiert den Abschluss des Dokuments.

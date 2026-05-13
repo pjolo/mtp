@@ -34,11 +34,9 @@ This guide covers the following clinical domains:
 - **Prenatal care visits** – Structured encounter documentation for each visit
 - **Care continuity** – Episode of Care linking the full pregnancy care pathway
 - **Care team** – Midwife and practitioner qualifications and roles
-
-Out of scope for this version:
-- Postnatal follow-up beyond the immediate newborn period
-- Vaccination documentation
-- Screening results (e.g. newborn hearing screening)
+- **Postnatal** follow-up beyond the immediate newborn period
+- **Vaccination** documentation
+- **Screening results** (e.g. newborn hearing screening)
 
 ## Use Cases
 

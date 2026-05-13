@@ -21,6 +21,9 @@ rectangle "**Bundle: CH MTP Document**" as Bundle #orange/yellow {
       rectangle "Observation – Pregnancy Status" as SecStatus #yellowgreen
       rectangle "Encounter – Prenatal Visit          " as SecVisit #yellowgreen
       rectangle "Episode of Care                        " as SecEpisode #yellowgreen
+      rectangle "Encounter – Postnatal Visit        " as SecPostnatal #lightyellow
+      rectangle "Immunization                             " as SecImm #lightyellow
+      rectangle "Observation – Screening           " as SecScreen #lightyellow
     }
   }
 
@@ -35,18 +38,24 @@ rectangle "**Bundle: CH MTP Document**" as Bundle #orange/yellow {
     rectangle "[[StructureDefinition-ch-mtp-pregnancy-status.html Entry: Observation (Pregnancy Status)]]" as E8 #salmon
     rectangle "[[StructureDefinition-ch-mtp-prenatal-visit.html Entry: Encounter (Prenatal Visit)]]" as E9 #salmon
     rectangle "[[StructureDefinition-ch-mtp-episode-of-care.html Entry: EpisodeOfCare]]" as E10 #salmon
+    rectangle "[[StructureDefinition-ch-mtp-postnatal-visit.html Entry: Encounter (Postnatal Visit)]]" as E11 #lightsalmon
+    rectangle "[[StructureDefinition-ch-mtp-immunization.html Entry: Immunization]]" as E12 #lightsalmon
+    rectangle "[[StructureDefinition-ch-mtp-observation-screening.html Entry: Observation (Screening)]]" as E13 #lightsalmon
   }
 }
 
-SecMother   ..> E1
-SecNewborn  ..> E2
-SecRelated  ..> E3
-SecPartner  ..> E4
-SecMidwife  ..> E5
+SecMother    ..> E1
+SecNewborn   ..> E2
+SecRelated   ..> E3
+SecPartner   ..> E4
+SecMidwife   ..> E5
 SecCondition ..> E6
-SecObs      ..> E7
-SecStatus   ..> E8
-SecVisit    ..> E9
-SecEpisode  ..> E10
+SecObs       ..> E7
+SecStatus    ..> E8
+SecVisit     ..> E9
+SecEpisode   ..> E10
+SecPostnatal ..> E11
+SecImm       ..> E12
+SecScreen    ..> E13
 
 @enduml
